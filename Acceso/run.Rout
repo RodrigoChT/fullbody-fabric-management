@@ -1,0 +1,793 @@
+
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R es un software libre y viene sin GARANTIA ALGUNA.
+Usted puede redistribuirlo bajo ciertas circunstancias.
+Escriba 'license()' o 'licence()' para detalles de distribucion.
+
+R es un proyecto colaborativo con muchos contribuyentes.
+Escriba 'contributors()' para obtener más información y
+'citation()' para saber cómo citar R o paquetes de R en publicaciones.
+
+Escriba 'demo()' para demostraciones, 'help()' para el sistema on-line de ayuda,
+o 'help.start()' para abrir el sistema de ayuda HTML con su navegador.
+Escriba 'q()' para salir de R.
+
+> print(Sys.time())
+[1] "2017-06-07 13:45:13 -05"
+> require(shiny)
+Loading required package: shiny
+> pandoc.folder <- Sys.getenv("RSTUDIO_PANDOC")
+> Sys.setenv(RSTUDIO_PANDOC = pandoc.folder)
+> folder_address <- 'C:/Users/EQUIPO/Google Drive/FullBodyInventorySystem'
+> runApp(folder_address, launch.browser = T)
+
+Attaching package: 'shinyjs'
+
+The following object is masked from 'package:shiny':
+
+    runExample
+
+The following objects are masked from 'package:methods':
+
+    removeClass, show
+
+
+Attaching package: 'pander'
+
+The following object is masked from 'package:shiny':
+
+    p
+
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Listening on http://127.0.0.1:6294
+Warning in is.na(e2) :
+  is.na() aplicado a un objeto que no es (lista o vector) de tipo 'NULL
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f47d11615d.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/T2.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f41ad19dc.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/T3.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f456c32e2.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/T4.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f44d717496.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V27.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f4729770a.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V28.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f42ffc49f6.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V29.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f4522f2567.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V30.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f46303f0f.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V31.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f4b247e3b.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V32.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f4602424a.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V33.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f43ce73d1c.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V34.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f43d01288.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V35.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f45ad37e11.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V36.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f422264f8a.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V37.pdf
+
+
+processing file: report.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |  10%
+   inline R code fragments
+
+  |                                                                         |.............                                                    |  20%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ results: chr "asis"
+
+
+output file: report.knit.md
+
+"C:/PROGRA~2/Pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output pandoc12f424318a0.pdf --template "C:\R-3.4.0\library\rmarkdown\rmd\latex\default-1.17.0.2.tex" --highlight-style tango --latex-engine pdflatex --variable graphics=yes --variable "geometry:margin=1in" 
+
+Output created: Reportes/V38.pdf

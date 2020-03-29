@@ -1,0 +1,138 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: header.tex
+params:
+  po.id: po.id
+  po.info.general: po.info.general
+  po.info.garments: po.info.garments
+  po.info.garments.flow: po.info.garments.flow
+  po.info.materials: po.info.materials
+sansfont: Calibri light
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,
+                      warning = F)
+```
+
+***
+
+\begin{vwcol}[widths={0.3,0.7},
+ sep=.8cm, justify=flush,rule=0pt,indent=1em] 
+   \null \vfill
+  \includegraphics[width=.2\textwidth]{./Acceso/LOGO.jpg}
+  \vfill \null
+  
+\newpage
+  
+  \null \vfill
+  \section{\fontsize{50}{15}\selectfont Full Body}
+  \vfill \null
+ \end{vwcol}
+ 
+``` {r echo = FALSE}
+subtitle <- paste0('Orden de producción \\#',
+                   params$po.id)
+```
+
+ 
+\section{\fontsize{25}{15}\selectfont \hfil `r subtitle`\hfil}
+\bigskip
+\bigskip
+
+\section{\fontsize{15}{15}\selectfont \hfil Información General\hfil}
+\medskip
+ 
+``` {r echo = FALSE, results = 'asis'}
+
+library(knitr)
+library(xtable)
+
+
+t1 <- knitr::kable(params$po.info.general,
+               format = 'latex',
+               booktabs = T,
+               col.names = c('Información', ''),
+               linesep = ""
+               #align = 'l',
+               #padding = 20
+               )
+
+b <- as.data.frame(t(params$po.info.garments))
+b$names <- c('Prenda',
+             'Cantidad original',
+             'Corte',
+             'Recibido')
+b <- b[, c('names', 'V1')]
+                   
+t2 <- knitr::kable(b,
+             format = 'latex', 
+             col.names = c('Prendas recibidas', ''),
+             row.names = F,
+             booktabs = T,
+             linesep = "")
+
+t3 <- knitr::kable(params$po.info.materials,
+               format = 'latex',
+               booktabs = T, 
+               col.names = c('Nombre', 
+                             'Cantidad acordada',
+                             'Cantidad entregada',
+                             'Costo'),
+               linesep = ""
+               #align = 'l',
+               #padding = 20
+               )
+
+t4 <- knitr::kable(params$po.info.garments.flow,
+               format = 'latex',
+               booktabs = T, 
+               col.names = c('ID sistema',
+                             'ID alternativo',
+                             'Fecha recibo',
+                             'Prenda',
+                             'Cantidad'),
+               linesep = ""
+               #align = 'l',
+               #padding = 20
+               )
+
+
+cat(c("\\begin{table}[!htb]
+    \\begin{minipage}[t]{.5\\linewidth}
+      \\vspace{0pt}
+      \\centering",
+        t1,
+    "\\end{minipage}%
+    \\begin{minipage}[t]{.5\\linewidth}
+      \\vspace{0pt}
+      \\centering",
+        t2,
+    "\\end{minipage} 
+\\end{table}"
+))
+
+# cat(c('\\centering', t3))
+
+``` 
+\section{\fontsize{15}{15}\selectfont \hfil Materiales\hfil}
+\medskip
+
+\begin{center}
+`r t3`
+\end{center}
+ 
+ \section{\fontsize{15}{15}\selectfont \hfil Recibos prendas\hfil}
+\medskip
+
+\begin{center}
+`r t4`
+\end{center}
+
+\bigskip
+\bigskip
+
+***
